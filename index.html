@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurélie — Haute Joaillerie & Ethical Gemstones</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-serif { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-[#121110] text-[#f4eee5] antialiased selection:bg-[#d4af37] selection:text-black">
+
+  <div class="bg-[#211d19] py-2 text-center text-[11px] uppercase tracking-widest text-[#d4af37] border-b border-[#312a23]">
+    Complimentary insured worldwide delivery on handcrafted commissions
+  </div>
+
+  <header class="sticky top-0 z-50 bg-[#121110]/90 backdrop-blur-md border-b border-[#29241e]">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="text-2xl font-serif tracking-widest font-bold">AURÉLIE</span>
+        <span class="text-[#d4af37] text-xs font-serif italic">Paris</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-8 text-xs uppercase tracking-widest text-[#b5a99a]">
+        <a href="#collections" class="hover:text-[#d4af37] transition">Collections</a>
+        <a href="#bespoke" class="hover:text-[#d4af37] transition">Bespoke Atelier</a>
+        <a href="#sizer" class="hover:text-[#d4af37] transition">Ring Sizer</a>
+        <a href="#heritage" class="hover:text-[#d4af37] transition">Maison Heritage</a>
+      </nav>
+      <button onclick="toggleCart()" class="relative p-2 text-[#d4af37] hover:scale-110 transition">
+        <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+        <span id="cartCount" class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-[#d4af37] text-black font-bold text-[10px] flex items-center justify-center">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="py-24 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="space-y-8">
+      <span class="text-xs uppercase font-serif tracking-[0.25em] text-[#d4af37]">La Nouvelle Collection 2026</span>
+      <h1 class="text-5xl sm:text-6xl font-serif font-light leading-tight">
+        Heirlooms sculpted in <span class="italic font-normal text-[#d4af37]">liquid gold</span> and celestial emeralds.
+      </h1>
+      <p class="text-[#b5a99a] text-sm leading-relaxed max-w-md">
+        Every gemstone is conflict-free, hand-selected in Sri Lanka and Antwerp, then set by master artisans in our Place Vendôme atelier.
+      </p>
+      <div class="flex items-center gap-4 pt-2">
+        <a href="#collections" class="px-8 py-3.5 bg-[#d4af37] hover:bg-[#bfa035] text-black text-xs font-semibold uppercase tracking-widest transition">Explore Catalogue</a>
+        <a href="#bespoke" class="px-8 py-3.5 border border-[#4a3e31] hover:border-[#d4af37] text-xs uppercase tracking-widest transition">Commission Bespoke</a>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="aspect-[4/5] rounded-3xl overflow-hidden border border-[#3a3024]">
+        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1000&q=80" alt="Gold Fine Jewelry" class="w-full h-full object-cover">
+      </div>
+      <div class="absolute -bottom-8 -left-8 p-6 bg-[#1a1714] border border-[#3a3024] rounded-2xl max-w-xs shadow-2xl">
+        <span class="text-[10px] uppercase font-mono tracking-widest text-[#d4af37]">Craftsmanship</span>
+        <p class="text-xs text-[#b5a99a] mt-1">18K Recycled Solid Gold with certified Colombian emeralds & GIA brilliant-cut diamonds.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collection Grid -->
+  <section id="collections" class="py-24 bg-[#181613] border-y border-[#29241e]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-serif uppercase tracking-[0.2em] text-[#d4af37]">Curated Signatures</span>
+        <h2 class="text-3xl sm:text-4xl font-serif">Selected Creations</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Item 1 -->
+        <div class="bg-[#121110] border border-[#2b251d] rounded-2xl overflow-hidden group">
+          <div class="h-80 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80" alt="Solitaire Ring" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="font-serif text-lg">The Solaire Solitaire Ring</h3>
+            <p class="text-xs text-[#8c8071]">1.8 Carat Oval Diamond, 18K Yellow Gold</p>
+            <div class="flex items-center justify-between pt-3 border-t border-[#241f19]">
+              <span class="font-mono text-sm text-[#d4af37]">$4,850</span>
+              <button onclick="addToCart('The Solaire Solitaire Ring', 4850)" class="text-xs uppercase tracking-wider font-semibold text-[#f4eee5] hover:text-[#d4af37] transition">Add to Bag</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="bg-[#121110] border border-[#2b251d] rounded-2xl overflow-hidden group">
+          <div class="h-80 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80" alt="Pearl Drop" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="font-serif text-lg">Tahitian Pearl Cascade</h3>
+            <p class="text-xs text-[#8c8071]">South Sea Baroque Pearl, Rose Gold Drop</p>
+            <div class="flex items-center justify-between pt-3 border-t border-[#241f19]">
+              <span class="font-mono text-sm text-[#d4af37]">$2,900</span>
+              <button onclick="addToCart('Tahitian Pearl Cascade', 2900)" class="text-xs uppercase tracking-wider font-semibold text-[#f4eee5] hover:text-[#d4af37] transition">Add to Bag</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="bg-[#121110] border border-[#2b251d] rounded-2xl overflow-hidden group">
+          <div class="h-80 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80" alt="Emerald Cuff" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="font-serif text-lg">Verdure Emerald Choker</h3>
+            <p class="text-xs text-[#8c8071]">Muzo Emeralds, Hand-woven Gold Mesh</p>
+            <div class="flex items-center justify-between pt-3 border-t border-[#241f19]">
+              <span class="font-mono text-sm text-[#d4af37]">$7,400</span>
+              <button onclick="addToCart('Verdure Emerald Choker', 7400)" class="text-xs uppercase tracking-wider font-semibold text-[#f4eee5] hover:text-[#d4af37] transition">Add to Bag</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Ring Sizer Tool -->
+  <section id="sizer" class="py-20 max-w-4xl mx-auto px-6">
+    <div class="p-10 rounded-3xl bg-[#191714] border border-[#383025] text-center space-y-8">
+      <span class="text-xs font-serif uppercase tracking-[0.2em] text-[#d4af37]">Maison Tool</span>
+      <h2 class="text-3xl font-serif">Interactive Ring Diameter Finder</h2>
+      <p class="text-xs text-[#b5a99a] max-w-md mx-auto">Place your existing ring on the circle or slide to find your precise US and European ring size measurement.</p>
+      
+      <div class="flex flex-col items-center gap-6">
+        <div id="ringCircle" class="w-32 h-32 rounded-full border-2 border-[#d4af37] flex items-center justify-center transition-all duration-200 shadow-lg shadow-[#d4af37]/20">
+          <span id="circleDiameter" class="text-xs font-mono text-[#d4af37]">17.3 mm</span>
+        </div>
+
+        <div class="w-full max-w-md space-y-2">
+          <input type="range" id="sizeRange" min="14" max="22" step="0.1" value="17.3" oninput="updateRingSize(this.value)" class="w-full accent-[#d4af37] cursor-pointer">
+          <div class="flex justify-between text-xs text-[#8c8071] font-mono">
+            <span>Size 4 (14.9mm)</span>
+            <span id="activeSize" class="text-[#d4af37] font-bold">US 7 / EU 54</span>
+            <span>Size 12 (21.4mm)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Drawer -->
+  <div id="cartDrawer" class="hidden fixed inset-0 z-50 bg-black/70 flex justify-end">
+    <div class="w-full max-w-md bg-[#161411] h-full p-8 flex flex-col justify-between border-l border-[#332b21]">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-[#29231b]">
+          <h3 class="font-serif text-xl">Your Shopping Bag</h3>
+          <button onclick="toggleCart()"><i data-lucide="x" class="w-5 h-5"></i></button>
+        </div>
+        <div id="cartItems" class="py-6 space-y-4">
+          <p id="emptyMsg" class="text-xs text-[#8c8071]">Your bag is currently empty.</p>
+        </div>
+      </div>
+      <div class="border-t border-[#29231b] pt-6 space-y-4">
+        <div class="flex justify-between font-serif">
+          <span>Subtotal</span>
+          <span id="cartTotal" class="font-mono text-[#d4af37]">$0</span>
+        </div>
+        <button onclick="alert('Proceeding to encrypted luxury checkout via Stripe Private Protocol.')" class="w-full py-4 bg-[#d4af37] hover:bg-[#bfa035] text-black font-semibold text-xs uppercase tracking-widest transition">
+          Secure Checkout
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="border-t border-[#26201a] py-12 text-center text-xs text-[#736758]">
+    <p>© 2026 Aurélie Haute Joaillerie S.A. Place Vendôme, Paris.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    let bag = [];
+
+    function toggleCart() {
+      document.getElementById('cartDrawer').classList.toggle('hidden');
+    }
+
+    function addToCart(title, price) {
+      bag.push({ title, price });
+      renderCart();
+      toggleCart();
+    }
+
+    function renderCart() {
+      const container = document.getElementById('cartItems');
+      const count = document.getElementById('cartCount');
+      const total = document.getElementById('cartTotal');
+      count.textContent = bag.length;
+
+      if (bag.length === 0) {
+        container.innerHTML = '<p class="text-xs text-[#8c8071]">Your bag is currently empty.</p>';
+        total.textContent = '$0';
+        return;
+      }
+
+      let sum = 0;
+      container.innerHTML = bag.map((item, idx) => {
+        sum += item.price;
+        return '<div class="flex justify-between items-center text-xs pb-3 border-b border-[#241e17]"><div><p class="font-medium">' + item.title + '</p><p class="text-[#d4af37] font-mono">$' + item.price.toLocaleString() + '</p></div><button onclick="removeItem(' + idx + ')" class="text-[#8c8071] hover:text-red-400">Remove</button></div>';
+      }).join('');
+
+      total.textContent = '$' + sum.toLocaleString();
+    }
+
+    function removeItem(idx) {
+      bag.splice(idx, 1);
+      renderCart();
+    }
+
+    function updateRingSize(mm) {
+      const circle = document.getElementById('ringCircle');
+      const px = mm * 6.5;
+      circle.style.width = px + 'px';
+      circle.style.height = px + 'px';
+      document.getElementById('circleDiameter').textContent = mm + ' mm';
+
+      const us = ((mm - 11.63) / 0.8128).toFixed(1);
+      document.getElementById('activeSize').textContent = 'US ' + us + ' / ' + mm + 'mm';
+    }
+  </script>
+</body>
+</html>
